@@ -7,18 +7,18 @@ const fs = require('fs');
 const getYoutubeID = require('get-youtube-id');
 const fetchVideoInfo = require('youtube-info');
 const yt_api_key = "AIzaSyDeoIH0u1e72AtfpwSKKOSy3IPp2UHzqi4";
-const prefix = '*';
+const prefix = '!';
 
 client.on('message', message => {
-	if(message.content.startsWith(prefix + 'قرآن')) {
+	if(message.content.startsWith(prefix + 'quran')) {
 		message.delete();
     const voiceChannel = message.member.voiceChannel;
     if (!voiceChannel) return message.reply(`**يحب ان تكون في روم صوتي**`);
 
 	let embed = new Discord.RichEmbed()
     .setAuthor(`${message.author.tag}`, message.author.avatarURL)
-	.setColor('#000000')
-	.setFooter("بوت القرآن | صدقة جارية للجميع", 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiqVT5PZAfcy8qZxlr3SQv3mmCw9zPiu2YBLIQ4bBePL2jLm7h')
+	.setColor('#FFFFFF')
+	.setFooter("القرآن الكريم | صدقة جآرية للجميع", 'https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjkj8bDgdffAhVDUBoKHRiDAqkQjRx6BAgBEAU&url=http%3A%2F%2Fquranunlocked.com%2Fpage%2Fquran80&psig=AOvVaw3MQBp3IjqyfnclWc2w2D_o&ust=1546790303695145')
       .setDescription(` 
      🕋 اوامر بوت القرآن الكريم 🕋
 	 

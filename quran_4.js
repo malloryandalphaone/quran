@@ -1,6 +1,4 @@
-/*
-صدقه جارية للجميع
-*/
+
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const ytdl = require('ytdl-core');
@@ -177,4 +175,5 @@ collector7.on('collect', r => {
 })
 }
 });
-client.login("Token | التوكن");
+
+client.login(process.env.BOT_TOKEN);
